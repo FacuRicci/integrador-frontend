@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techplace - Carrito de Compras</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center p-3 bg-warning">
+        <div class="logo font-weight-bold">Techplace</div>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+        <div class="menu-hamburguesa d-block d-lg-none" id="menuHamburguesa">
+            ☰
+        </div>
+    </header>
+    <main class="container mt-5">
+        <h1 class="text-center mb-4">Carrito de Compras</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Producto 1</td>
+                            <td>$100</td>
+                            <td><input type="number" value="1" class="form-control"></td>
+                            <td>$100</td>
+                            <td><button class="btn btn-danger btn-sm">Eliminar</button></td>
+                        </tr>
+                        <tr>
+                            <td>Producto 2</td>
+                            <td>$200</td>
+                            <td><input type="number" value="1" class="form-control"></td>
+                            <td>$200</td>
+                            <td><button class="btn btn-danger btn-sm">Eliminar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-right">
+                    <h4>Total: $300</h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Iniciar Sesión</h4>
+                        <form id="login-form" action="#" method="post">
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Contraseña:</label>
+                                <input type="password" class="form-control" id="password" name="password" required>
+                            </div>
+                            <button type="submit" class="btn btn-warning btn-block">Iniciar Sesión</button>
+                        </form>
+                        <hr>
+                        <p class="text-center">¿No tienes una cuenta? <a href="#">Regístrate</a></p>
+                    </div>
+                </div>
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h4 class="card-title">Detalles del Pago</h4>
+                        <button class="btn btn-success btn-block">Proceder al Pago</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-warning text-center py-3 mt-5">
+        <p>&copy; 2024 Techplace</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
